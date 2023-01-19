@@ -23,5 +23,5 @@ public interface PlayerService {
 
     Player findById(Long id);
 
-    Player save(Player findPlayer, Player updatePlayer);
+    Player updatePlayer(Player findPlayer, Player updatePlayer);
 }

@@ -109,7 +109,7 @@ public class PlayerController {
         Player findPlayer = playerService.findById(id);
         if (findPlayer == null)
             return notFound().build();
-        updatePlayer = playerService.save(findPlayer, updatePlayer);
+        updatePlayer = playerService.updatePlayer(findPlayer, updatePlayer);
 
         if (updatePlayer != null)
             return ok(updatePlayer);
